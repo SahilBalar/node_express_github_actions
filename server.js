@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 //http://localhost:3000/
 app.get('/', function (req, res) {
-    res.send("<h1>Home Page</h1>")
+    res.redirect('index.html')
 })
 
 app.get('/name', function (req, res) {
